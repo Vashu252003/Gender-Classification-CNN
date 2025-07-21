@@ -4,7 +4,7 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.keras import layers
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.preprocessing.image import ImageDataGenerator, load_img, img_to_array
+from tensorflow.keras.preprocessing.image import ImageDataGenerator, load_img, img_to_array 
 from tensorflow.keras.optimizers import Adam
 import matplotlib.pyplot as plt
 
@@ -21,7 +21,7 @@ train_datagen = ImageDataGenerator(rescale=1./255,
 test_datagen = ImageDataGenerator(rescale=1.0/255)
 
 train_generator = train_datagen.flow_from_directory(
-    "data/Train/",
+    "data/Training/",
     batch_size=256,
     class_mode='binary',
     target_size=(64, 64)
@@ -74,7 +74,7 @@ hist = model.fit(
     validation_data=validation_generator,
     steps_per_epoch=train_generator.samples // 256,
     validation_steps=validation_generator.samples // 256,
-    epochs=50
+    epochs=1
 )
 
 # Save the trained model
@@ -95,7 +95,7 @@ plt.savefig('training_validation_accuracy.png')
 plt.show()
 
 # 5. Test on a new image
-path = "data/Test/Female/160001.jpg"
+path = "data/Validation/female/112944.jpg.jpg"
 img = load_img(path, target_size=(64, 64))
 x = img_to_array(img)
 x = np.expand_dims(x, axis=0)
@@ -110,3 +110,4 @@ else:
     print("is a female")
 plt.imshow(img)
 plt.show()
+
