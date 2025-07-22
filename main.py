@@ -94,13 +94,12 @@ plt.legend(loc=0)
 plt.savefig('training_validation_accuracy.png')
 plt.show()
 
-# 5. Test on a new image
+# 5. Test on a random image
 path = "data/Validation/female/112944.jpg.jpg"
 img = load_img(path, target_size=(64, 64))
 x = img_to_array(img)
 x = np.expand_dims(x, axis=0)
 x /= 255.0
-
 classes = model.predict(x, batch_size=1)
 print(classes[0])
 
