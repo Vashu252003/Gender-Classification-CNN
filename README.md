@@ -1,5 +1,4 @@
-# Gender Classification using Convolutional Neural Networks (CNN)
-
+Gender Classification using Convolutional Neural Networks (CNN)
 This project implements a deep learning model to classify a person's gender (male or female) from facial images. The model is a Convolutional Neural Network (CNN) built with TensorFlow and Keras.
 
 # 📋 Table of Contents
