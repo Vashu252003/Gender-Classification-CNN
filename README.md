@@ -1,7 +1,9 @@
-Gender Classification using Convolutional Neural Networks (CNN)
+# Gender Classification using Convolutional Neural Networks (CNN)
+
 This project implements a deep learning model to classify a person's gender (male or female) from facial images. The model is a Convolutional Neural Network (CNN) built with TensorFlow and Keras.
 
-📋 Table of Contents
+# 📋 Table of Contents
+
 Key Features
 
 Results and Demonstration
@@ -18,7 +20,8 @@ Contributing
 
 Contact
 
-✨ Key Features
+# ✨ Key Features
+
 Deep CNN Model: Utilizes a robust CNN architecture for high-accuracy feature extraction.
 
 Data Augmentation: Employs Keras's ImageDataGenerator to create more training data from existing images, preventing overfitting and improving model generalization.
@@ -27,14 +30,18 @@ Training and Validation Plots: Generates and saves plots for accuracy and loss t
 
 Modular and Readable Code: The project is structured for clarity and ease of understanding.
 
-📊 Results and Demonstration
+# 📊 Results and Demonstration
+
 Model Performance
 The model achieves high accuracy on both the training and validation sets after 50 epochs. The plot below shows the learning curves.
+![alt text](image.png)
 
 Example Prediction
 Here is an example of the model classifying a new, unseen image from the test set.
+![alt text](image-1.png)
 
-🧠 Model Architecture
+# 🧠 Model Architecture
+
 The model is a Sequential stack of layers, primarily composed of:
 
 5 Convolutional Layers (Conv2D): Responsible for learning hierarchical features from the images.
@@ -49,7 +56,8 @@ Dropout: Included in the dense layers to reduce overfitting.
 
 Sigmoid Activation: The final output layer uses a sigmoid function to produce a probability score for binary classification.
 
-📂 Dataset
+# 📂 Dataset
+
 This model was trained using a large dataset of facial images. Due to its size, the dataset is not included in this repository.
 
 Dataset Setup
@@ -73,7 +81,8 @@ project-root/
 ├── Female/
 └── Male/
 
-🛠️ Setup and Installation
+# 🛠️ Setup and Installation
+
 Follow these steps to set up the project on your local machine.
 
 Prerequisites
@@ -89,15 +98,15 @@ cd Gender-Classification-CNN
 
 Create and Activate a Virtual Environment
 
-# Create the virtual environment
+## Create the virtual environment
 
 python -m venv .venv
 
-# Activate it (Windows)
+## Activate it (Windows)
 
 .\.venv\Scripts\activate
 
-# Activate it (macOS/Linux)
+## Activate it (macOS/Linux)
 
 source .venv/bin/activate
 
@@ -106,7 +115,8 @@ Install all the required packages from the req.txt file.
 
 pip install -r req.txt
 
-🚀 Usage
+# 🚀 Usage
+
 Training the Model
 To train the model from scratch, simply run the main.py script.
 
@@ -129,10 +139,12 @@ Note: The trained .h5 model file is intentionally not tracked by Git (via .gitig
 Testing on a Single Image
 The script is also configured to test the trained model on a sample image after training is complete. You can modify the path variable in main.py to test with your own images.
 
-🤝 Contributing
+# 🤝 Contributing
+
 Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
 
-📧 Contact
+# 📧 Contact
+
 Vashu - GitHub Profile
 
-Project Link: https://github.com/Vashu252003/Gender-Classification-CNN
+# Project Link: https://github.com/Vashu252003/Gender-Classification-CNN
