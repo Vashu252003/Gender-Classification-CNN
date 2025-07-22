@@ -35,14 +35,13 @@ This project implements a deep learning model to classify a person's gender (mal
 ### Model Performance
 
 The model achieves high accuracy on both the training and validation sets after 50 epochs. The plot below shows the learning curves.
-
-![Training and Validation Accuracy Plot](https://i.imgur.com/g8o7wL9.png)
+![alt text](imagess/accuracy_plot.png)
 
 ### Example Prediction
 
 Here is an example of the model classifying a new, unseen image from the test set.
 
-![Example Prediction](https://i.imgur.com/k3q2R4A.png)
+![Example Prediction]![alt text](image-3.png)
 
 ---
 
