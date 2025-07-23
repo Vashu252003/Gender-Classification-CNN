@@ -72,7 +72,7 @@ This model was trained using a large dataset of facial images. Due to its size, 
     ```
     project-root/
     └── data/
-        ├── Train/
+        ├── Training/
         │   ├── Female/
         │   │   ├── 000001.jpg
         │   │   └── ...

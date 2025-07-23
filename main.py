@@ -74,7 +74,7 @@ hist = model.fit(
     validation_data=validation_generator,
     steps_per_epoch=train_generator.samples // 256,
     validation_steps=validation_generator.samples // 256,
-    epochs=1
+    epochs=50
 )
 
 # Save the trained model
@@ -95,7 +95,7 @@ plt.savefig('training_validation_accuracy.png')
 plt.show()
 
 # 5. Test on a random image
-path = "data/Validation/female/112944.jpg.jpg"
+path = "data/Test/female/112944.jpg"
 img = load_img(path, target_size=(64, 64))
 x = img_to_array(img)
 x = np.expand_dims(x, axis=0)
