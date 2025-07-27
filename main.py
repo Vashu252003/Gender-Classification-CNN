@@ -94,6 +94,7 @@ plt.legend(loc=0)
 plt.savefig('training_validation_accuracy.png')
 plt.show()
 
+
 # 5. Test on a random image
 path = "data/Test/female/112944.jpg"
 img = load_img(path, target_size=(64, 64))
